@@ -1,4 +1,3 @@
-/* تصفير الهوامش الأساسية وتحديد نوع الخط */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,7 @@
 }
 
 .btn-primary {
-    border-radius: 25px; /* تدوير أطراف الزر */
+    border-radius: 25px;    
 }
 
 body {
@@ -15,10 +14,9 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* لجعل الفوتر في أسفل الشاشة دائماً */
+    min-height: 100vh;       
 }
 
-/* تصميم شريط التنقل */
 .navbar {
     background-color: #2c3e50;
     color: white;
@@ -49,9 +47,8 @@ body {
     color: #3498db;
 }
 
-/* تصميم قسم المعلومات الشخصية */
 .personal-info {
-    flex: 1; /* يأخذ المساحة المتبقية بين الـ Navbar والـ Footer */
+    flex: 1;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +93,6 @@ button:hover {
     background-color: #2980b9;
 }
 
-/* تصميم التذييل */
 .footer {
     background-color: #2c3e50;
     color: white;
@@ -104,31 +100,26 @@ button:hover {
     padding: 15px;
     margin-top: auto;
 }
-/* --- تنسيق قسم "من أنا" (About Me Styling) --- */
 
-/* الفئة الرئيسية للحاوية */
 .about-styling {
     padding-bottom: 50px;
 }
 
-/* تنسيق متطور لصورة الملف الشخصي */
 .profile-img-custom {
     width: 160px;
     height: 160px;
     object-fit: cover;
-    border: 5px solid #fff; /* إطار أبيض سميك */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير سلس عند التحويم */
+    border: 5px solid #fff;     
+    transition: transform 0.3s ease, box-shadow 0.3s ease;      
 }
 
-/* تأثير عند تحريك الماوس فوق الصورة */
 .profile-img-custom:hover {
-    transform: scale(1.08) rotate(3deg); /* تكبير وتدوير بسيط */
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important; /* ظل أعمق */
+    transform: scale(1.08) rotate(3deg); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
 }
 
-/* تنسيق العنوان الرئيسي */
 .about-styling h2 {
-    color: #2c3e50; /* لون كحلي غامق واحترافي */
+    color: #2c3e50;     
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -136,58 +127,50 @@ button:hover {
     display: inline-block;
 }
 
-/* إضافة خط زخرفي تحت العنوان */
 .about-styling h2::after {
     content: '';
     display: block;
     width: 60px;
     height: 4px;
-    background-color: #3498db; /* لون أزرق زاهي (Primary) */
+    background-color: #3498db;
     margin: 10px auto 0;
     border-radius: 2px;
 }
 
-/* تنسيق الفقرة الوصفية */
 .about-styling .text-muted {
     font-size: 1.1rem;
-    line-height: 1.8; /* زيادة المسافة بين السطور للقراءة */
+    line-height: 1.8;      
     color: #6c757d !important;
 }
 
-/* تنسيق بطاقة المهارات */
 .skills-card-custom {
-    border: none; /* إزالة الحدود الافتراضية */
-    border-top: 4px solid #3498db; /* إضافة حد علوي ملون */
-    border-radius: 10px; /* زوايا مستديرة أكثر */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير التحويم */
+    border: none;    
+    border-top: 4px solid #3498db;     
+    border-radius: 10px;   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;   
 }
 
-/* تأثير تحويم جذاب للبطاقة */
 .skills-card-custom:hover {
-    transform: translateY(-8px); /* رفع البطاقة للأعلى */
-    box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15) !important; /* ظل ملون خفيف */
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15) !important;
 }
 
-/* تنسيق عنوان البطاقة الداخلي */
 .skills-card-custom .card-title {
     color: #2c3e50;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-/* تنسيق نص المهارات */
 .skills-card-custom .card-text {
-    background-color: #f8f9fa; /* خلفية رمادية فاتحة جداً للنص */
+    background-color: #f8f9fa;
     padding: 10px;
     border-radius: 5px;
     color: #555;
     font-size: 0.95rem;
-    font-family: 'Courier New', Courier, monospace; /* خط يوحي بالبرمجة للمهارات التقنية */
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* --- تنسيق قسم "تواصل معي" --- */
 
-/* تنسيق العنوان */
 .contact-styling h2 {
     color: #2c3e50;
     font-weight: 700;
@@ -205,13 +188,12 @@ button:hover {
     border-radius: 2px;
 }
 
-/* التنسيق الأساسي للبطاقة */
 .social-card {
     display: block;
     background-color: #ffffff;
     padding: 30px 20px;
     border-radius: 15px;
-    text-decoration: none; /* إزالة الخط السفلي من الروابط */
+    text-decoration: none;      
     color: #333;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     border: 2px solid transparent;
@@ -219,7 +201,6 @@ button:hover {
     height: 100%;
 }
 
-/* نصوص البطاقة */
 .social-card h5 {
     font-weight: bold;
     margin-bottom: 10px;
@@ -231,38 +212,30 @@ button:hover {
     margin: 0;
 }
 
-/* تأثير التحويم الأساسي للبطاقات */
 .social-card:hover {
-    transform: translateY(-10px); /* رفع البطاقة للأعلى */
+    transform: translateY(-10px);    
     text-decoration: none;
 }
 
-/* ألوان مخصصة لكل منصة (Brand Colors)
-   تتغير الحدود والظل ولون الأيقونة عند التحويم 
-*/
 
-/* GitHub (أسود) */
 .social-card.github i { color: #333; transition: color 0.3s; }
 .social-card.github:hover {
     border-color: #333;
     box-shadow: 0 10px 25px rgba(51, 51, 51, 0.2);
 }
 
-/* LinkedIn (أزرق) */
 .social-card.linkedin i { color: #0077b5; transition: color 0.3s; }
 .social-card.linkedin:hover {
     border-color: #0077b5;
     box-shadow: 0 10px 25px rgba(0, 119, 181, 0.2);
 }
 
-/* Mostaql (تركواز/أخضر مزرق) */
 .social-card.mostaql i { color: #1ba590; transition: color 0.3s; }
 .social-card.mostaql:hover {
-    border-color: #1ba590;
+    border-color: #15b49c;
     box-shadow: 0 10px 25px rgba(27, 165, 144, 0.2);
 }
 
-/* Upwork (أخضر فاقع) */
 .social-card.upwork i { color: #14a800; transition: color 0.3s; }
 .social-card.upwork:hover {
     border-color: #14a800;
