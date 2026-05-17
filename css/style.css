@@ -6,6 +6,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.btn-primary {
+    border-radius: 25px; /* تدوير أطراف الزر */
+}
+
 body {
     background-color: #f9f9f9;
     color: #333;
